@@ -1,0 +1,37 @@
+<div class="row">
+
+  <div class="col-md-6">
+    <input
+  type="text"
+  placeholder="Search by movie title..."
+  [(ngModel)]="searchTerm"
+  (input)="filterMovies()"
+  class="search-input" />
+  </div>
+
+  <div class="col-md-6">
+    <input
+    type="text"
+    placeholder="Search by genre..."
+    [(ngModel)]="genreTerm"
+    (input)="filterMovies()"
+    class="search-input" />
+  </div>
+
+  <div class="col-md-6" *ngIf="us.isAuthencticated()">
+    <input
+    type="text"
+    placeholder="Search by star rating..."
+    [(ngModel)]="starRating"
+    (input)="filterMovies()"
+    class="search-input" />
+  </div>
+</div>
+
+
+
+  <div *ngIf="filteredMovies.length > 0">
+    <div *ngFor="let mov of filteredMovies">
+      <app-movie [movie]="mov"></app-movie>  <!-- Display movie details in child component -->
+    </div>
+  </div>

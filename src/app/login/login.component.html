@@ -1,0 +1,58 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <h2 class="card-title">Log In</h2>
+
+        <!-- Login error message -->
+        <div *ngIf="!loginValid" class="alert alert-danger">
+          The username or password were not recognized.
+        </div>
+
+        <!-- Username Field -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="form-control"
+            placeholder="Username"
+            [(ngModel)]="username"
+            name="username"
+            required
+          />
+          <div *ngIf="loginForm.submitted && !username" class="text-danger">
+            Please provide a valid username
+          </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
+          <div *ngIf="loginForm.submitted && !password" class="text-danger">
+            Please provide a valid password
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!loginForm.form.valid"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+

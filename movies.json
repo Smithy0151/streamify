@@ -1,0 +1,106 @@
+{
+  "movies": [
+    {
+      "MID": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": "Drama",
+      "director": "Frank Darabont",
+      "id": "1",
+      "ratings": [
+        {
+          "stars": "5",
+          "comment": "An amazing story of hope and redemption."
+        },
+        {
+          "stars": "4",
+          "comment": "Great acting and plot, but a bit slow at times."
+        }
+      ]
+    },
+    {
+      "MID": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": "Crime, Drama",
+      "director": "Francis Ford Coppola",
+      "id": "2",
+      "ratings": [
+        {
+          "stars": "5",
+          "comment": "Cool Gangster Film"
+        },
+        {
+          "stars": "4",
+          "comment": "Great acting and StoryLine"
+        }
+      ]
+    },
+    {
+      "MID": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": "Action, Crime, Drama",
+      "director": "Christopher Nolan",
+      "id": "3",
+      "ratings": [
+        {
+          "stars": "3",
+          "comment": "Cool CGI Effects"
+        },
+        {
+          "stars": "4",
+          "comment": "Action Packed"
+        }
+      ]
+    },
+    {
+      "MID": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": "Crime, Drama",
+      "director": "Quentin Tarantino",
+      "id": "4",
+      "ratings": [
+        {
+          "stars": "4",
+          "comment": "An amazing story will watch again"
+        },
+        {
+          "stars": "4",
+          "comment": "Great acting and plot, but a bit slow at times."
+        }
+      ]
+    },
+    {
+      "MID": 5,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": "Drama, Romance",
+      "director": "Robert Zemeckis",
+      "id": "5",
+      "ratings": [
+        {
+          "stars": "1",
+          "comment": "Boring."
+        },
+        {
+          "stars": "2",
+          "comment": "Didn't run far enough."
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "abc",
+      "password": "abc123",
+      "id": "5738"
+    },
+    {
+      "id": "fe33",
+      "username": "smithy1234",
+      "password": "smithy1234"
+    }
+  ]
+}

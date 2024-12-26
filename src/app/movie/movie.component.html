@@ -1,0 +1,54 @@
+<!-- <p>movie works!</p>
+<div class="movie">
+  <p>Id: {{movie.id}}</p>
+  <p>MID: {{movie.MID}}</p>
+  <p>Title: {{movie.title}}</p>
+  <p>Year: {{movie.year}}</p>
+  <p>Genre: {{movie.genre}}</p>
+  <p>Director: {{movie.director}}</p>
+  <p>Stars: {{movie.ratings.stars}}</p>
+  <p>Comments: {{movie.ratings.comment}}</p>
+</div> -->
+
+<div class="movie-details">
+  <!-- Movie Details -->
+  <h2>{{ movie.title }} ({{ movie.year }})</h2>
+  <p><strong>Genre:</strong> {{ movie.genre }}</p>
+  <p><strong>Director:</strong> {{ movie.director }}</p>
+
+  <!-- Current Ratings -->
+   <div *ngIf="us.isAuthencticated()">
+    <h3>Current Ratings:</h3>
+    <ul>
+      <li *ngFor="let rating of movie.ratings">
+        <strong>{{ rating.stars }} stars</strong> - {{ rating.comment }}
+      </li>
+    </ul>
+   </div>
+
+
+  <!-- Rating Form -->
+  <!-- <h3>Submit Your Rating</h3>
+  <form (ngSubmit)="submitRating()">
+    <div>
+      <label for="stars">Stars:</label>
+      <input
+        [(ngModel)]="newRating.stars"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea
+        [(ngModel)]="newRating.comment"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit">
+      Submit Rating
+    </button>
+  </form> -->
+</div>
+
